@@ -12,4 +12,5 @@ public class AdultMembership extends MembershipCard implements MembershipCardTyp
     public double getFee() {
         return MembershipCardType.STANDARD_FEE;
     }
+
 }

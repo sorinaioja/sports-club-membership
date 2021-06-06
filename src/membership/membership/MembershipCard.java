@@ -22,16 +22,18 @@ public class MembershipCard implements GetMembership, RenewMembership, CheckMemb
     public void updateMembership(Date newDate) {
         if(newDate.after(this.startDate))
             this.endDate = newDate;
+        else
+            System.out.println("The inserted date is before the started date");
     }
 
     @Override
     public void setSportClub() {
-
+        System.out.println("Sport Club has been set.");
     }
 
     @Override
     public void payFee() {
-        System.out.println("The member has paid " + price);
+        System.out.println("The member " + this.name + " has paid " + price);
     }
 
     @Override
@@ -50,60 +52,52 @@ public class MembershipCard implements GetMembership, RenewMembership, CheckMemb
 
     @Override
     public void updateSubscription(String newType) {
-        System.out.println("Membership with id " + id + this.toString() + " was changed with ");
+        System.out.println("Membership with id " + id + " is pending changes with " + newType + " membership");
     }
 
     @Override
     public String toString(){
-        return "Id membership: " + getId() + "\nstart date: " + getStartDate() + "\nend date: " + getEndDate() + "\nprice " + getPrice() + " / year";
+        return "Id membership: " + getId() + "\nstart date: " + getStartDate() + "\nend date: " + getEndDate() + "\nprice " + getPrice() + " / year. \n";
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
     public Date getStartDate() {
         return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
     }
 
     public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
-
     public int getAge() {
         return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
-
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
