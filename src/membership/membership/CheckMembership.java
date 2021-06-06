@@ -1,3 +1,5 @@
+package membership.membership;
+
 import java.util.Date;
 
 public interface CheckMembership {

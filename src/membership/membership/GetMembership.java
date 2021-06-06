@@ -1,3 +1,5 @@
+package membership.membership;
+
 public interface GetMembership {
     public void setSportClub();
     public void payFee();

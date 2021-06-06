@@ -1,6 +1,8 @@
+package membership.membership;
+
 import java.util.Date;
 
-public class MembershipCard implements GetMembership,RenewMembership,CheckMembership{
+public class MembershipCard implements GetMembership, RenewMembership, CheckMembership {
     private int id;
     private String name;
     private double price;

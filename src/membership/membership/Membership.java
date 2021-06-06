@@ -1,3 +1,7 @@
+package membership.membership;
+
+import membership.membership.AdultMembership;
+
 import java.util.Calendar;
 import java.util.Date;
 

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="member:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/member_jar</output-path>
+    <root id="archive" name="member.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/member/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="sports-club-membership" />
+    </root>
+  </artifact>
+</component>
